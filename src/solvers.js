@@ -67,12 +67,6 @@ window.countNRooksSolutions = function(n) {
           count--;
           tempArray.splice(-1);
         }
-        if (i === (n-1) && j === (n-1)) {
-          if (tempArray.length > 0) {
-            //Undo the last addition to matrix
-            matrix[tempArray[tempArray.length-1][0], tempArray[tempArray.length-1][1]] = 0;
-            i = tempArray[tempArray.length-1][0];
-            j = tempArray[tempArray.length-1][1];
           }
         }
       }
